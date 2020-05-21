@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="233.0" layoutY="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="205.0" text="PROPOSITION" textFill="#fc0303" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="40.0" text="Nombre de mot(s) restant(s):" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nbWordLeft" disable="true" editable="false" layoutX="260.0" layoutY="41.0" prefHeight="25.0" prefWidth="40.0" />
+                  <Label layoutX="417.0" layoutY="40.0" text="Nombre essai:" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nbPropo" alignment="CENTER" disable="true" editable="false" layoutX="551.0" layoutY="41.0" prefHeight="25.0" prefWidth="40.0" text="0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="wordSucess" layoutX="53.0" layoutY="32.0" prefWidth="250.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wrongWord" layoutX="334.0" layoutY="32.0" prefWidth="250.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="findWord" disable="true" layoutX="323.0" layoutY="28.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Label layoutX="69.0" layoutY="27.0" text="Trouver l'anargam suivant:" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="141.0" layoutY="27.0" text="Entrez proposition:" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="enterPropo" alignment="CENTER" layoutX="325.0" layoutY="32.0" prefWidth="200.0" promptText="proposition" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="send" layoutX="111.0" layoutY="28.0" mnemonicParsing="false" prefWidth="100.0" text="Envoyer" />
+                  <Button fx:id="pass" layoutX="373.0" layoutY="28.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Pass" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

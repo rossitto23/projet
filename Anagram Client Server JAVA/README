@@ -1,0 +1,6 @@
+﻿
+
+Il y a plusieurs projets: 
+1. le projet AnagramClient représente un client;
+2. le projet AnagramModel représente le jeu Anagram qui est ajouté dans AnagramServer;
+3. le projet MessageChatV4 représente les messages. Il est ajouté dans le projet AnagramClient et AnagramServer.
